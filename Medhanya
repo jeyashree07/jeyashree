@@ -1,0 +1,175 @@
+
+/*Finding profitable train service using arrays*/
+package traintime;
+import java.util.Scanner;
+public class Traintime;
+public static void main(String[] args){
+Scanner scan=new Scanner(System.in);
+int p=0;
+String [] day={"Monday "," Tuesday "," Wednesday "};
+double [] time={06.04,09.04,12.04,15.04,19.04};
+int [] [] passenger={22,119,64,177,21,22,111,87,193,22,11,107,93,162,42};
+int choice=scan.nextInt();
+switch(choice)
+{
+case1: System.out.print(" Day      Departure time     Number of passengers ");
+for(int i=0;i<3;i++)
+{
+for (int j=0;j<5;j++)
+{
+for(int k=0:k<5;k++)
+{System. out.print(" "+day[i]+" "+time[j]+" "+passenger[j][k]);
+}
+}
+}
+max=passenger[0][0];
+min=passenger[0][0];
+String d1,d3;
+double d2,d4;
+for (int i=0;i<3;i++)
+{
+for(int j=0;j<5;j++)
+{
+if(max<passenger[i][j])
+{
+max=passenger[i][j];
+d1=day[i];
+d2=time [j];
+}
+if(min>passenger[i][j])
+{
+min=passenger[i][j];
+d3=day[i];
+d4=time[j];
+}
+}
+}
+System. out.print(" The most popular train runs on"+d1+"at"+d2+"with"+max+"passengers ");
+int j1=passenger[0][0]+passenger[1][0]+passenger[2][0];
+int j2=passenger[0][1]+passenger[1][1]+passenger[2][1];
+if(j1>j2)
+System.out.print (" The 06.04 train is more popular than the 09.04 train");
+else if(j1<j2)
+System.out.print("The 09.04 train is more popular than the 06.04 train");
+else
+System.out.print ("The 06.04train is equal to the 09.04 train");
+if(passengere[0][0]>passenger[1][0])
+System.out.print("The 06.04 train on Monday is more popular than the 06.04 train on Tuesday ");
+else if(passenger[0][0]<passenger[1][0])
+System.out.print(" The 06.04 train on Tuesday is more popular than the 06.04 train on Monday ");
+else
+System.out.print(" The 06.04 train on Monday and Tuesday are equally popular");
+for(int i=0;i<3;i++)
+{
+for(int j=0;j<5;j++)
+{System.out.print("The" +time[j]+"train on day[i]+"have below 50 passengers ");
+}
+}
+}
+int p1=passenger[0][2]+passenger[1][2]+passenger[2][2];
+S=p1/3;
+System.out print(" The average number of passengers travelling on 12.04 train over the three days is"+s);
+break;
+case2:
+System.exit (0);
+break;
+default: System.out.print("Invalid");
+}
+}
+}
+/*calculate the average number of passenger travelling where day and time is specified by the user (eg.what was the average number of passenger using the 19.04 on Wednesday)*/
+ 
+int passenger 1[]={22,119,64,77,22};
+int passenger 2[]={22,111,87,193,27};
+int passenger 3={11,107,93,162,42};
+double departuretime1[]={6.04,9.04,12.04,15.04,19.04};
+double departuretime2[]={6.04,9.04,12.04,15.04,19.04};
+double departuretime3[]={6.04,9.04,12.04,15.04,19.04};
+String days []=newstring[3];
+ Days[0]="Monday";
+ Days[1]="Tuesday";
+ Days[2]="Wednesday";
+String d;
+int t;
+Double departuretime;
+System.out println("Enter the Days:");
+d=sc.nextLine();
+System.out.println("Enter the time:");
+departuretime=sc.nextDouble;
+    for(int i=0;i<5;i++)
+  {
+     if(d.contentEquals(days[0])
+{
+  if(departuretime=departuretime1[j])
+{
+   System.out.println("The average passenger="+passenger 1[j]);
+   }
+   else if (d.contentEquals(days[1])
+{
+  if(departuretime==departuretime2[j])
+{
+  System.out.println("the average passengers:"+passenger 2[j])
+       }
+     }
+       else if(d.contentEquals(days[2]))
+{
+   if(departuretime==departuretime3[j])
+{
+    System.out.println("the average passenger:"+passenger3[j]);
+
+/*quit the menu should be repeatedly offered to user until they choose to quit*/
+  System.out.println("exit(0)");
+ default:
+     System.out.println("\n Invalid");
+
+/*Find out which of any two trains is more popular where day and time is specified by the user*/
+
+int passenger1[]={22,119,64,77,22};
+int passenger2={22,111,87,193,27};
+int passenger3[]={11,107,93,162,42};
+double departuretime1[]={6.04,9.04,12.04,15.04,19.04};
+double departuretime2[]={6.04,9.04,12.04,15.04,19.04};
+double departuretime3={6.04,9.04,12.04,15.04,19.04};
+String days []=newstring [3];
+  days[0]="Monday";
+  days[1]="tuesday”;
+  days[2]="Wednesday";
+  String d[]=new string [3];
+   int sum=0,sum1=0,sum2=0,total=0;
+double departuretime[]=new double [2];
+   for(int i=0;i<2;i++)
+   {
+     System.out.println("enter the day"+i);
+  d[i]=sc.nextLine();
+    }
+     for(int i=0;i<2;i++)
+     {
+        System.out.println("enter the time"+i);
+   Departuretime [i]=sc.nextdouble;
+     }
+       for(int i=0;i<2;i++)
+{ 
+    for(int j=0;j<5;j++)
+   {
+      if(d[i]. contentEquals(days[0]))
+   {
+      if(departuretime [i]==departuretime1[j])
+   {
+      Sum=sum+passenger [j];
+}
+ else if(d[i]. contentEquals (days[1]))
+{
+  if(departuretime [i]==departuretime 2[j])
+{
+    sum1=sum1+passenger1[j];
+     }
+   }
+else if(d[i]. contentEquals (days[2]))
+ {
+    Sum2=sum2+passenger 2[j];
+            }
+           }
+         }
+       }
+
+
